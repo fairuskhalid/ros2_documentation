@@ -184,7 +184,7 @@ Which will return:
       Publisher count: 1
       Subscriber count: 2
 
-6 ros2 interface show
+6 ros2 msg show
 ^^^^^^^^^^^^^^^^^^^^^
 
 Nodes send data over topics using messages.
@@ -199,11 +199,11 @@ Recall that the ``cmd_vel`` topic has the type:
 
 This means that in the package ``geometry_msgs`` there is a ``msg`` called ``Twist``.
 
-Now we can run ``ros2 interface show <type>.msg`` on this type to learn its the details, specifically, what structure of data the message expects.
+Now we can run ``ros2 msg show <type>`` on this type to learn its the details, specifically, what structure of data the message expects.
 
 .. code-block:: console
 
-    ros2 interface show geometry_msgs/msg/Twist.msg
+    ros2 msg show geometry_msgs/msg/Twist
 
 .. code-block:: console
 
